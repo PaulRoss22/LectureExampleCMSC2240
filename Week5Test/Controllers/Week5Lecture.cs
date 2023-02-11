@@ -12,10 +12,14 @@ namespace Week5Test.Controllers
         {
             foreach (Doge doge in input)
             {
-                System.Console.WriteLine(doge.Name);
+                System.Console.WriteLine(returnString(doge.Name));
             }
 
             return Accepted(input);
+        }
+        String returnString(string input)
+        {
+            return input;
         }
     }
 
