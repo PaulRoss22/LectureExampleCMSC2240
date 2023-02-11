@@ -19,6 +19,8 @@ namespace Week5Test.Controllers
         }
         String returnString(string input)
         {
+            //Here I log the character at position zero
+            System.Diagnostics.Debug.WriteLine(input[0]);
             return input;
         }
     }
