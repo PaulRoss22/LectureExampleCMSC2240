@@ -12,10 +12,16 @@ namespace Week5Test.Controllers
         {
             foreach (Doge doge in input)
             {
-                System.Console.WriteLine(doge.Name);
+                System.Console.WriteLine(returnString(doge.Name));
             }
 
             return Accepted(input);
+        }
+        String returnString(string input)
+        {
+            //Here I log the character at position zero
+            System.Diagnostics.Debug.WriteLine(input[0]);
+            return input;
         }
     }
 
